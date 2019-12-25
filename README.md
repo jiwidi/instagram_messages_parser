@@ -7,5 +7,5 @@ This repo contains a script `processJSON.py` that will help you process instagra
 To run `processJSON.py` specify your usename and the filepath for the messages.json
 
 ```python
-python processJSON --f filepath --f username
+python processJSON.py --f filepath --f username
 ```
