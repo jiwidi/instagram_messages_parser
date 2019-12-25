@@ -55,7 +55,7 @@ def processJSON(filename,username):
         os.makedirs('data')
     for conversation in conversations.keys():
         logger.info(f"Saving conversation for f{conversation}")
-        pd.DataFrame(conversations[conversation],columns=['Date','Author','Message']).to_csv(f'data/{conversation}.csv')
+        pd.DataFrame(conversations[conversation],columns=['Date','Author','Message']).to_csv(f'data/{conversation}.csv',index=False)
             
 if __name__ == "__main__":
     logger.info("Starting processing")
